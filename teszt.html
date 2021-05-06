@@ -1,0 +1,121 @@
+<!Doctype html>
+<html lang="hu">
+<head>
+    <title>Gyíkemberek - Teszt</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/stiluslap.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="teszt.html#teszt" class="hide">Tartalomra ugrás</a>
+        </nav>
+        <a href="index.html"><img src="media/banner_01.png" class="img-fluid mx-auto d-block banner" style="background-image: url('media/banner_background.gif');" alt="Gyíkemberek" ></a>
+        <nav id="menu" class="nav rounded">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Rólunk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="fontostudnivalok.html">Fontos tudnivalók</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Teszt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="esemenyek.html">Események</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1 id="teszt">Te vajon gyíkember vagy? Most megtudhatod!</h1>
+        <aside class="rounded">Mindig is tudni akartad, hogy gyíkember vagy-e? <b>Mert sosem tudhatod!</b> A gyíkembereknek rengeteg alvóügynöke van, akik azt sem tudják, hogy valóban gyíkemberek! Ha kíváncsi vagy, hogy vajon az vagy-e, akkor itt a lehetőség, hogy megtudd! Töltsed ki az alábbi tesztet, és választ kapsz!</aside>
+        <form class="rounded" id="urlap" action="mailto:asd@email.com" method="POST" enctype="text/plain">
+            <label for="szulnap">Születésnapod:</label><br>
+            <input type="date" id="szulnap" name="szulnap"><br>
+            <label for="nev">Neved:</label><br>
+            <input type="text" id="nev" placeholder="Neved" size="30" maxlength="50"><br>
+            <label for="email">Email: </label><br>
+            <input type="text" id="email" placeholder="e-Mail" size="30" maxlength="50"><br><br>
+            <p class="p-form">Kérlek írd le kedvenc filmed történetét!<br>(ha nincs legalább 1200 szó, valószínűleg meg sem fogjuk tekínteni)</p>
+            <textarea name="kisessze" id="szoveg" placeholder="Ide írjad a kisesszédet"></textarea><br><br>
+            <p class="p-form">Jelöld ki a tevékenységeket, amelyeket csinálnál az alábbiak közül: </p>
+            <input type="checkbox" id="palacsinta" name="mit-csinalnal" value="palacsinta">
+            <label for="palacsinta">Palacsintát ennék</label><br>
+            <input type="checkbox" id="jugoszlavia" name="mit-csinalnal" value="jugoszlavia">
+            <label for="jugoszlavia">Illegális nukleáris robbanószerkezeteket adnék el az egykori Jugoszlávia területén</label><br>
+            <input type="checkbox" id="mozi" name="mit-csinalnal" value="mozi">
+            <label for="mozi">Elmennék a moziba megnézni a Táncoló Talpak 2 c. mozifilmet</label><br>
+            <input type="checkbox" id="chill" name="mit-csinalnal" value="chill">
+            <label for="chill">Merengenék a türkizkék égbolt felé, egy nyári napon, koradélután, és közbe elszívnék egy cigarettát</label><br>
+            <input type="checkbox" id="semmi" name="mit-csinalnal" value="semmi">
+            <label for="semmi">A fentiek közül egyik sem.</label><br>
+            <p class="p-form">Melyik a legjellemzőbb rád?</p>
+            <input type="radio" id="levego" name="jellemzo" value="semmi">
+            <label for="levego">Sokszor veszek levegőt egy nap, hogy ne fulladjak meg.</label><br>
+            <input type="radio" id="haz" name="jellemzo" value="haz">
+            <label for="haz">Szeretnék venni egy házat, hogy aztán lakjak benne</label><br>
+            <input type="radio" id="seta" name="jellemzo" value="seta">
+            <label for="seta">Annak érdekében, hogy a földhöz viszonyított helyemet megváltoztassam, az egyik lábamat, a másik elé teszem, és ezt addig folytatom, ameddig a kívánt pozíciót el nem értem</label><br>
+            <input type="radio" id="nocsoki" name="jellemzo" value="nocsoik">
+            <label for="nocsoki">Nem szeretem a csokit</label><br>
+            <input type="radio" id="semmi1" name="jellemzo" value="semmi">
+            <label for="semmi1">A fentiek közül egyik sem.</label><br>
+            <p class="p-form">Milyen típusú helyre mennél inkább nyaralni? </p>
+            <input type="radio" id="tenger" name="nyaral" value="tenger">
+            <label for="tenger">Homokos, tengerpartos</label><br>
+            <input type="radio" id="to" name="nyaral" value="to">
+            <label for="to">Tópart, erdős</label><br>
+            <input type="radio" id="hideg" name="nyaral" value="hideg">
+            <label for="hideg">Hidegebb éghajlat, hegyekbe</label><br>
+            <input type="radio" id="semmi2" name="nyaral" value="semmi">
+            <label for="semmi2">A fentiek közül egyik sem.</label><br>
+            <p class="p-form">Kérlek válasszad ki a listából, hogy te milyen típusú ember vagy: </p>
+            <select name="ital">
+                <option value="cola">Kóla</option>
+                <option value="sprite">Sprite</option>
+                <option value="tea">Tea</option>
+                <option value="water">Vízivó</option>
+                <option value="semmi" selected>Egyik sem</option>
+            </select>
+            <p class="p-form">Pipáld be, ha egy gyíkember vagy </p>
+            <input type="checkbox" id="gyik" name="gyik" value="gyik">
+            <label for="gyik">Gyíkember vagyok!</label><br>
+            <input type="submit" value="Tudni akarom!" id="gyikTest">
+            <input type="reset">
+        </form>
+        <article id="eredmeny">
+            <h2>Eredmény</h2>
+            <p id="teszteredmeny">A teszted eredménye majd itt fog megjelenni.</p>
+        </article>
+    </main>
+    
+    <footer>
+        <table class="table-foot">
+            <tr>
+                <th class="th-foot"><a class="a-footer" href="index.html">Rólunk</a></th><th class="th-foot"><a class="a-footer" href="fontostudnivalok.html">Fontos tudnivalók</a></th><th class="th-foot"><div class="inactive">Teszt</div></th><th class="th-foot"><a class="a-footer" href="esemenyek.html">Események</a></th>
+            </tr>
+            <tr>
+                <td class="td-foot"><a class="a-footer" href="index.html#mi-vagyunk">Kik vagyunk mi</a></td><td class="td-foot"><a class="a-footer" href="fontostudnivalok.html#gyikemberek">Mik azok a gyíkemberek</a></td><td class="td-foot"><a class="a-footer" href="teszt.html#teszt">Te vajon gyíkember vagy?</a></td><td class="td-foot"><a class="a-footer" href="esemenyek.html#kovetkezo-esemeny">Következő esemény</a></td>
+            </tr>
+            <tr>
+                <td class="td-foot"><a class="a-footer" href="index.html#celunk">Céljaink</a></td><td class="td-foot"><a class="a-footer" href="fontostudnivalok.html#galeria">Galéria</a></td><td class="td-foot"><a class="a-footer" href="teszt.html#eredmeny">Eredmény</a></td><td class="td-foot"><a class="a-footer" href="esemenyek.html#jovobeli-esemenyek">Jövőbeli események</a></td>
+            </tr>
+            <tr>
+                <td class="td-foot"><a class="a-footer" href="index.html#sikerek">Sikereink</a></td><td class="td-foot"><a class="a-footer" href="fontostudnivalok.html#veszelyek">Veszélyek, és így védekezz ellenük!</a></td><td class="td-foot"></td><td class="td-foot"></td>
+            </tr>
+            <tr>
+                <td class="td-foot"></td><td class="td-foot"><a class="a-footer" href="fontostudnivalok.html#video">Informatív kisvideó</a></td><td class="td-foot"></td><td class="td-foot"></td>
+            </tr>
+        </table>
+        <p class="copyright"><span lang="en"><b>GyíkHumans Kft. We did not have money to reserve the rights.</b></span></p>
+</footer>
+<script src="scripts/javas.js"></script>
+</body>
+
